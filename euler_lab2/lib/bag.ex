@@ -1,4 +1,10 @@
 defmodule Bag do
+
+  @moduledoc """
+  Create a module `Bag` that implements a multiset (bag) data structure
+  based on Separate Chaining HashMap in Elixir.
+  """
+
   @opaque t :: %__MODULE__{
             size: non_neg_integer(),
             buckets: tuple()
